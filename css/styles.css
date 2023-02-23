@@ -35,6 +35,10 @@ input {
   display: block;
 }
 
+textarea {
+  resize: none;
+}
+
 :root {
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -701,11 +705,13 @@ body {
   letter-spacing: 0.02em;
   color: var(---navy-color);
   padding-top: 72px;
+  padding-bottom: 16px;
   margin-left: 24px;
   margin-right: 24px;
 }
 
 .group-modal {
+  display: block;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -724,6 +730,71 @@ body {
   border: none;
 
   margin: 24px 120px;
+}
+
+.label-text {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--light-slate-color);
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.label-text:first-child {
+  margin-top: 0px;
+}
+
+.textarea-form {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 8px;
+  color: var(--light-slate-color);
+}
+
+.textarea-text {
+  width: 360px;
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 8px;
+
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.textarea-form ::placeholder {
+  color: var(--light-slate-color);
+}
+
+.input-text {
+  width: 360px;
+  height: 40px;
+  left: 0px;
+  top: 84px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.policy {
+  display: flex;
+  margin: 16px 24px 24px 24px;
+}
+
+.policy-text {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #757575;
+  padding-left: 8px;
 }
 
 /* transition-property: background-color;
