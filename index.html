@@ -412,7 +412,8 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- верни на место is-hidden -->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-btn">
@@ -424,34 +425,45 @@
           Leave your contacts and we will call you back
         </h2>
 
-        <form class="form">
-          <div class="group-modal">
-            <label for="name" class="label-text">Name</label>
-            <input type="text" name="name" id="name" class="input-text" />
-          </div>
+        <form class="modal-form">
+          <label class="label-form-text">
+            <span class="label-text">Name</span>
+            <span class="label-form-wrapper">
+              <input type="text" name="name" class="input-text" />
+              <svg class="modal-icon">
+                <use href="images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
 
-          <div class="group-modal">
-            <label for="tel" class="label-text">Phone</label>
-            <input type="tel" name="tel" id="tel" class="input-text" />
-          </div>
+          <label class="label-form-text">
+            <span class="label-text">Phone</span>
+            <span class="label-form-wrapper">
+              <input type="tel" name="tel" class="input-text" />
+              <svg class="modal-icon">
+                <use href="images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
 
-          <div class="group-modal">
-            <label for="mail" class="label-text">Email</label>
-            <input type="email" name="mail" id="mail" class="input-text" />
-          </div>
+          <label class="label-form-text">
+            <span class="label-text">Email</span>
+            <span class="label-form-wrapper">
+              <input type="email" name="mail" class="input-text" />
+              <svg class="modal-icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
 
-          <div class="textarea-form">
-            <label for="textarea">Comment</label>
+          <label class="label-form-text">
+            <span class="label-text">Comment</span>
             <textarea
-              name=""
-              id="textarea"
-              cols=""
-              rows=""
+              name="message"
               placeholder="Text input"
               class="textarea-text"
-            >
-            </textarea>
-          </div>
+            ></textarea>
+          </label>
 
           <div class="policy">
             <input type="checkbox" name="police" id="policy" />
