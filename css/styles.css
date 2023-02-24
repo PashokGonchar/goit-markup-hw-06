@@ -747,7 +747,6 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--light-slate-color);
-  margin-bottom: 4px;
 }
 
 .label-form-wrapper {
@@ -764,11 +763,8 @@ body {
   height: 120px;
   padding: 8px 16px;
 
-  margin-top: 4px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
 }
 
 .textarea-text:focus {
@@ -776,8 +772,12 @@ body {
   border: 1px solid var(--iris-color);
 }
 
-.textarea-form ::placeholder {
-  color: var(--light-slate-color);
+.textarea-text::placeholder {
+  font-family: var(--primary-font);
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .input-text {
@@ -818,6 +818,10 @@ body {
   width: 18px;
   height: 24px;
   fill: var(--navy-color);
+}
+
+.input-text:focus + .modal-icon {
+  fill: var(--iris-color);
 }
 
 /* transition-property: background-color;
