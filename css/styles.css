@@ -795,18 +795,35 @@ body {
   border: 1px solid var(--iris-color);
 }
 
-.policy {
-  display: flex;
+.check {
+  position: relative;
   margin-top: 16px;
-}
-
-.policy-text {
   font-family: var(--primary-font);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #757575;
-  padding-left: 8px;
+  margin-left: 24px;
+}
+
+.check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-box {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: -24px;
+  background-image: url(/images/checkbox.svg);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.check-input:checked + .check-box{
+  background-image: url(/images/checkbox-click.svg);
 }
 
 .modal-icon {
