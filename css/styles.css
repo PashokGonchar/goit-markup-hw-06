@@ -943,7 +943,7 @@ input{
   width: 16px;
   height: 16px;
   margin-left: -24px;
-  background-image: url(/images/checkbox.svg);
+  background-image: url('/images/checkbox.svg');
   top: 50%;
   transform: translateY(-50%);
 
@@ -953,5 +953,5 @@ input{
 }
 
 .check-input:checked + .check-icon {
-  background-image: url(/images/checkbox-click.svg);
+  background-image: url('/images/checkbox-click.svg');
 }
