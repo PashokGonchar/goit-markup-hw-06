@@ -800,7 +800,7 @@ input {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(---navy-color);
+  color: var(--navy-color);
   margin: 72px 24px 16px 24px;
 }
 
