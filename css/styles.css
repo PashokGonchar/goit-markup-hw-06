@@ -30,11 +30,6 @@ button {
   cursor: pointer;
 }
 
-label,
-input {
-  display: block;
-}
-
 :root {
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -67,7 +62,7 @@ body {
   padding-top: 120px;
 }
 
-/* HEADER */
+/* =========HEADER========= */
 .main-nav {
   display: flex;
   border-bottom: 1px solid var(--cornflower-color);
@@ -186,7 +181,7 @@ body {
   color: var(--ocean-color);
 }
 
-/* HERO  */
+/* =========HERO========= */
 
 .hero {
   background-color: var(--navy-color);
@@ -213,6 +208,8 @@ body {
   margin: 0 auto 45px;
 }
 
+/* =========HERO BUTTON========= */
+
 .hero-button {
   padding: 16px 32px;
   font-family: var(--primary-font);
@@ -236,6 +233,8 @@ body {
   background-color: var(--ocean-color);
   box-shadow: 0px 4px 4px 0px #00000026;
 }
+
+/* =========ADVANTAGES========= */
 
 .title {
   display: flex;
@@ -280,6 +279,8 @@ body {
   color: var(---navy-color);
 }
 
+/* =========CONTENT WORKING========= */
+
 .working-section {
   padding-top: 0;
 }
@@ -300,6 +301,8 @@ body {
   text-align: center;
   margin-bottom: 72px;
 }
+
+/* =========OUR TEAM========= */
 
 .subject-team {
   font-size: 36px;
@@ -382,6 +385,8 @@ body {
   background-color: var(--ocean-color);
 }
 
+/* =========CUSTOMERS========= */
+
 .customers-section {
   padding-top: 0px;
 }
@@ -428,6 +433,8 @@ body {
   height: 56px;
 }
 
+/* =========FOOTER========= */
+
 .footer {
   width: 264px;
 }
@@ -459,6 +466,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--cornflower-color);
 }
+
+/* =========FOOTER SOCIAL LIST========= */
 
 .footer-social-list {
   display: block;
@@ -502,6 +511,90 @@ body {
 .footer-list-link:focus {
   background-color: var(--green-color);
 }
+
+/* =========FOOTER SUBSCRIPTION========= */
+
+.footer-subscription {
+  font-family: var(--primary-font);
+  display: block;
+  margin-left: 80px;
+}
+
+.subscribe-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--white-color);
+}
+
+.subscription-form {
+  display: flex;
+  margin-top: 16px;
+}
+
+input{
+  padding: 8px 24px;
+}
+
+.subscription-mail {
+  font-size: 12px;
+  line-height: 2;
+  width: 264px;
+  margin-right: 24px;
+
+  letter-spacing: 0.04em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: transparent;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-mail:focus {
+  outline: none;
+  border: 1px solid var(--iris-color);
+}
+
+
+.subscription-btn {
+  position: relative;
+  width: 165px;
+  background-color: var(--iris-color);
+  border-radius: 4px;
+  padding: 8px 64px 8px 24px;
+
+  border: transparent;
+}
+
+.subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5px;
+
+  letter-spacing: 0.04em;
+
+  color: var(--white-color);
+}
+
+.subscribe-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+}
+
+/* =========WORKS BUTTON========= */
 
 .main-button {
   padding-top: 96px;
@@ -551,6 +644,8 @@ body {
   color: var(--white-color);
 }
 
+/* =========WORKS CARDS========= */
+
 .works-cards {
   display: flex;
   flex-wrap: wrap;
@@ -587,6 +682,17 @@ body {
   overflow: hidden;
 }
 
+.card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid var(--cornflower-color);
+  border-left: 1px solid var(--cornflower-color);
+  border-bottom: 1px solid var(--cornflower-color);
+}
+
+/* =========OVERLAY========= */
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -616,14 +722,7 @@ body {
   transform: translate(0, 0);
 }
 
-.card {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-right: 1px solid var(--cornflower-color);
-  border-left: 1px solid var(--cornflower-color);
-  border-bottom: 1px solid var(--cornflower-color);
-}
+/* =========BACKDROP========= */
 
 .backdrop {
   position: fixed;
@@ -646,13 +745,14 @@ body {
   transform: scale(1.5);
 }
 
+/* =========MODAL========= */
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  /* height: 576px; */
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -691,6 +791,8 @@ body {
   height: 8px;
   background-color: transparent;
 }
+
+/* =========DESIGN MODAL========= */
 
 .header-modal {
   font-family: var(--primary-font);
@@ -742,14 +844,14 @@ body {
   margin-bottom: 8px;
 }
 
-.textarea-wrapper {
-  margin-bottom: 0px;
-}
-
 .label-form-wrapper {
   display: block;
   position: relative;
   margin-top: 4px;
+}
+
+.textarea-wrapper {
+  margin-bottom: 0px;
 }
 
 .textarea-text {
@@ -800,6 +902,24 @@ body {
   border: 1px solid var(--iris-color);
 }
 
+.modal-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 24px;
+  fill: var(--navy-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-text:focus + .modal-icon {
+  fill: var(--iris-color);
+}
+
 .check {
   position: relative;
   margin-top: 16px;
@@ -808,9 +928,14 @@ body {
 }
 
 .check-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .check-icon {
@@ -829,22 +954,4 @@ body {
 
 .check-input:checked + .check-icon {
   background-image: url(/images/checkbox-click.svg);
-}
-
-.modal-icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 24px;
-  fill: var(--navy-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-text:focus + .modal-icon {
-  fill: var(--iris-color);
 }
