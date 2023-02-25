@@ -35,10 +35,6 @@ input {
   display: block;
 }
 
-textarea {
-  resize: none;
-}
-
 :root {
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -708,9 +704,18 @@ body {
 }
 
 .modal-form {
+  display: flex;
+  flex-direction: column;
   width: 360px;
   margin-left: 24px;
   margin-right: 24px;
+
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--light-slate-color);
 }
 
 .modal-btn {
@@ -718,7 +723,6 @@ body {
 }
 
 .send-btn {
-  font-family: var(--primary-font);
   font-weight: 500;
   width: 169px;
   font-size: 16px;
@@ -738,21 +742,14 @@ body {
   margin-bottom: 8px;
 }
 
-.label-text {
-  font-family: var(--primary-font);
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: var(--light-slate-color);
+.textarea-wrapper {
+  margin-bottom: 0px;
 }
 
 .label-form-wrapper {
   display: block;
   position: relative;
-}
-
-.label-text:first-child {
-  margin-top: 0px;
+  margin-top: 4px;
 }
 
 .textarea-text {
@@ -762,6 +759,14 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  resize: none;
+
+  margin-top: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-text:focus {
@@ -770,7 +775,6 @@ body {
 }
 
 .textarea-text::placeholder {
-  font-family: var(--primary-font);
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
@@ -785,6 +789,10 @@ body {
   padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-text:focus {
@@ -795,10 +803,6 @@ body {
 .check {
   position: relative;
   margin-top: 16px;
-  font-family: var(--primary-font);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   color: #757575;
   margin-left: 24px;
 }
@@ -817,10 +821,14 @@ body {
   position: absolute;
   margin-left: -24px;
 
+  top: 50%;
+  transform: translateY(-50%);
+
   border: 1.25px solid var(--navy-color);
   border-radius: 2px;
 
   fill: var(--white-color);
+  background-color: var(--white-color);
 }
 
 .check-input:checked + .check-icon {
@@ -861,6 +869,9 @@ border-color: var(--ocean-color);
   width: 18px;
   height: 24px;
   fill: var(--navy-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-text:focus + .modal-icon {
