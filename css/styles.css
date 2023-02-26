@@ -535,6 +535,10 @@ body {
   margin-top: 16px;
 }
 
+.subscription-label{
+  margin-right: 24px;
+}
+
 input {
   padding: 8px 24px;
 }
@@ -543,7 +547,6 @@ input {
   font-size: 12px;
   line-height: 2;
   width: 264px;
-  margin-right: 24px;
 
   letter-spacing: 0.04em;
 
@@ -756,6 +759,8 @@ input {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  padding:72px 24px 24px;
 }
 
 .modal-close-btn {
@@ -801,15 +806,13 @@ input {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--navy-color);
-  margin: 72px 24px 16px 24px;
+  margin-bottom: 16px;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
   width: 360px;
-  margin-left: 24px;
-  margin-right: 24px;
 
   font-family: var(--primary-font);
   font-size: 12px;
@@ -836,7 +839,6 @@ input {
   border: none;
 
   margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .label-form-text {
@@ -923,7 +925,7 @@ input {
   position: relative;
   margin-top: 16px;
   color: #757575;
-  margin-left: 24px;
+  padding-left: 24px;
   letter-spacing: 0.04em;
 }
 
